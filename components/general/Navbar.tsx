@@ -23,14 +23,16 @@ const Navbar = () => {
                       bg-off-white
                       dark:bg-dark
                       sm:max-w-desktop
-                      dark:border-off-white
-                      border-b
-                      border-black
                       ml-5
+                      mt-5
                       mr-5">
-          <div className="flex items-center space-x-2">
-            <span className="text-3xl"><TbAsterisk /></span>
-            <Link href="/"><div className="cursor-link">BOILER PLATE</div></Link> 
+          <div className="flex items-center space-x-2 text-5xl">
+            <Link href="/">
+              <div className="cursor-link">
+                <span className="text-sky-600 font-black">AI</span>
+                <span className="font-thin ml-1">testimonial</span>
+              </div>
+            </Link> 
           </div>
           <div className="flex space-x-4 text-2xl">
             <IconButton onClick={() => setDarkMode(!darkMode)}>
