@@ -6,7 +6,7 @@ import PageContainer from '../components/general/PageContainer'
 export default function Home() {
   return (
     <PageContainer className="text-red-600">
-      welcome to the boiler plate 
+      <div>welcome to the boiler plate</div>
     </PageContainer>
   )
 }
