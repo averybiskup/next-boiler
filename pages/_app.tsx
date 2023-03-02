@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         font-serif
                         dark:text-off-white
                         h-screen
-                        scrollbar
+                        scrollbar-thin
                         scrollbar-thumb-dark
                         scrollbar-track-off-white
                         dark:scrollbar-thumb-off-white
