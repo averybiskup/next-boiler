@@ -11,6 +11,17 @@ const Navbar = () => {
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
+  useEffect(() => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      console.log("SETTING DARK")
+      setDarkMode(true)
+    }
+  }, [])
+
+  useEffect(() => {
+    window.localStorage.setItem("theme", (darkMode) ? "dark" : "light")
+  }, [darkMode])
+
   return (
     <nav className="fixed flex justify-center w-full z-50">
       <div className="flex
@@ -24,13 +35,12 @@ const Navbar = () => {
                       dark:bg-dark
                       sm:max-w-desktop
                       ml-5
-                      mt-5
+                      pt-5
                       mr-5">
           <div className="flex items-center space-x-2 text-5xl">
             <Link href="/">
               <div className="cursor-link">
-                <span className="text-sky-600 font-black">AI</span>
-                <span className="font-thin ml-1">testimonial</span>
+                next-boiler
               </div>
             </Link> 
           </div>
