@@ -1,19 +1,20 @@
 import ABLink from '../elements/ABLink'
 import Link from 'next/link'
 import { useState, useEffect, useContext } from 'react'
-import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 import DarkModeContext from '../../contexts/darkModeContext'
 import { TbAsterisk } from 'react-icons/tb'
 import { SlSocialSpotify } from 'react-icons/sl'
 import IconButton from './IconButton'
+import { IoGlassesOutline, IoGlasses } from 'react-icons/io5'
 
 const Navbar = () => {
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext)
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      console.log("SETTING DARK")
+    if (localStorage.theme === 'dark' 
+        || (!('theme' in localStorage) 
+            && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setDarkMode(true)
     }
   }, [])
@@ -44,12 +45,12 @@ const Navbar = () => {
               </div>
             </Link> 
           </div>
-          <div className="flex space-x-4 text-2xl">
+          <div className="flex space-x-4 text-5xl">
             <IconButton onClick={() => setDarkMode(!darkMode)}>
               {
                 (darkMode)
-                  ? <IoSunnyOutline />
-                  : <IoMoonOutline />
+                  ? <IoGlassesOutline />
+                  : <IoGlasses />
               }
             </IconButton>
           </div>
