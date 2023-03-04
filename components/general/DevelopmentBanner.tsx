@@ -9,7 +9,14 @@ const DevelopmentBanner = () => {
     return <></>
 
   return (
-    <div className="w-screen bg-yeller flex justify-between items-center pl-5 pr-5">
+    <div className="w-screen
+                    bg-yeller
+                    flex
+                    justify-between
+                    items-center
+                    pl-5
+                    text-dark
+                    pr-5">
       <div>
         This project is still in development.
       </div>
