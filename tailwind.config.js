@@ -19,6 +19,7 @@ module.exports = {
       colors: {
         'dark': '#181818',
         'off-white': '#F0FFF0',
+        'yeller': 'rgb(175, 255, 100)'
       },
     },
   },

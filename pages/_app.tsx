@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import DarkModeContext from '../contexts/darkModeContext'
 import { useState, useEffect } from 'react'
 import Navbar from '../components/general/Navbar'
+import DevelopmentBanner from '../components/general/DevelopmentBanner'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         dark:scrollbar-thumb-off-white
                         dark:scrollbar-track-dark
                         dark:bg-dark">
+          <DevelopmentBanner />
           <Navbar />
           <Component {...pageProps} />
         </div>
