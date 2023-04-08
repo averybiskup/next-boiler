@@ -24,7 +24,7 @@ const Navbar = () => {
   }, [darkMode])
 
   return (
-    <nav className="fixed flex justify-center w-full z-50">
+    <nav className="flex justify-center w-full z-50">
       <div className="flex
                       h-12 
                       justify-between
@@ -44,15 +44,6 @@ const Navbar = () => {
                 next-boiler
               </div>
             </Link> 
-          </div>
-          <div className="flex space-x-4 text-5xl">
-            <IconButton onClick={() => setDarkMode(!darkMode)}>
-              {
-                (darkMode)
-                  ? <IoGlassesOutline />
-                  : <IoGlasses />
-              }
-            </IconButton>
           </div>
       </div>
     </nav>

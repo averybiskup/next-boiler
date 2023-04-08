@@ -16,13 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
                         text-dark
                         font-serif
                         dark:text-off-white
-                        h-screen
-                        scrollbar-thin
-                        scrollbar-thumb-dark
-                        scrollbar-track-off-white
-                        dark:scrollbar-thumb-off-white
-                        dark:scrollbar-track-dark
-                        dark:bg-dark">
+                        ">
           <DevelopmentBanner />
           <Navbar />
           <Component {...pageProps} />
