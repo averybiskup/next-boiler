@@ -13,5 +13,5 @@
   > rm -r node_modules  
   > rm package-lock.json  
   > git remote rm origin  
-  > npm instal  
+  > npm install
 
